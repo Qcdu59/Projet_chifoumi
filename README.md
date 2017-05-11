@@ -25,6 +25,5 @@ mkdir build
 cd build
 cmake ..
 make
-cd ../run
-../build/taxi.out
+./chifoumi.out
 ```
