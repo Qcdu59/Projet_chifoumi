@@ -1,8 +1,10 @@
 # Projet_chifoumi
 mini projet chifoumi de révision
 
-- prog cli | -> + compilation
-- prog gui |
+## description
+
+-> prog cli | -> + compilation
+-> prog gui |
 
 -> fichier données (logs)
 
@@ -10,3 +12,19 @@ mini projet chifoumi de révision
 
 -> doc | -> utilisateur -> sphinx
        | -> dev.        -> doxygen
+
+## dependencies
+
+
+
+
+## build & run
+
+```
+mkdir build
+cd build
+cmake ..
+make
+cd ../run
+../build/taxi.out
+```
