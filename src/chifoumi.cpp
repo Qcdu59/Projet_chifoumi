@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <glog/logging.h>
+#include "Game.hpp"
 
 int main(int argc, char ** argv)
 {
@@ -18,7 +19,13 @@ int main(int argc, char ** argv)
   google::InitGoogleLogging("log_chifoumi");
   google::SetLogDestination(google::GLOG_INFO, "log_chifoumi");
   ///////////////////////////////////////////////////////
+
   
-  std::cout << "Hello World!" << std::endl;
+  //std::cout << "Hello World!" << std::endl;
+  Game gametest;
+  std::string move;
+  std::cout << "move (Pierre, Feuille, Ciseaux) :";
+  std::cin >> move;
+  gametest.play(move);
   return 0;
 }

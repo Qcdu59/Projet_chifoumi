@@ -9,7 +9,7 @@ find_package( PkgConfig REQUIRED )
 pkg_check_modules( MYPKG REQUIRED libglog cpputest )
 include_directories( ${MYPKG_INCLUDE_DIRS} )
 
-ADD_EXECUTABLE( chifoumi.out src/chifoumi.cpp)
+ADD_EXECUTABLE( chifoumi.out src/chifoumi.cpp src/Game.cpp src/Random.cpp)
 
 ADD_EXECUTABLE( main_test.out src/main_test.cpp)
 

@@ -1,14 +1,12 @@
-/*! \mainpage My Personal Index Page
+/*! \mainpage Chifoumi_GL
  *
- * \section intro_sec Introduction
+ * \section intro_sec Chifoumi
  *
- * This is the introduction.
+ * Realisation d'un chifoumi en c++, respectivement en version "terminal" et
+ * en interface graphique.
+ * Chifoumi utilise les bibliothèque ccputest et libglog pour les test
+ * unitaires et les logs. 
  *
- * \section install_sec Installation
- *
- * \subsection step1 Step 1: Opening the box
- *
- * etc...
  */
 
 #include <iostream>
