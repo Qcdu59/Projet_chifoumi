@@ -1,10 +1,23 @@
+/*! \mainpage My Personal Index Page
+ *
+ * \section intro_sec Introduction
+ *
+ * This is the introduction.
+ *
+ * \section install_sec Installation
+ *
+ * \subsection step1 Step 1: Opening the box
+ *
+ * etc...
+ */
+
 #include <iostream>
 #include <glog/logging.h>
 
 int main(int argc, char ** argv)
 {
   ////////////////Initialisation Logs////////////////////
-  google::InitGoogleLogging(argv[0]);
+  google::InitGoogleLogging("log_chifoumi");
   google::SetLogDestination(google::GLOG_INFO, "log_chifoumi");
   ///////////////////////////////////////////////////////
   

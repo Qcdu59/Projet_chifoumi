@@ -1,3 +1,14 @@
+/*! \mainpage Chifoumi_GL
+ *
+ * \section intro_sec Chifoumi
+ *
+ * Realisation d'un chifoumi en c++, respectivement en version "terminal" et
+ * en interface graphique.
+ * Chifoumi utilise les bibliothèque ccputest et libglog pour les test
+ * unitaires et les logs. 
+ *
+ */
+
 #include <iostream>
 #include <glog/logging.h>
 

@@ -17,3 +17,14 @@ target_link_libraries( chifoumi.out ${MYPKG_LIBRARIES} )
 target_link_libraries( main_test.out ${MYPKG_LIBRARIES} )
 
 install (TARGETS chifoumi.out DESTINATION bin)
+
+# build doxygen documentation
+find_package(Doxygen)
+if(DOXYGEN_FOUND)
+    configure_file(Doxyfile.in ${CMAKE_BINARY_DIR}/Doxyfile)
+    add_custom_target(doc
+        ${DOXYGEN_EXECUTABLE} ${CMAKE_BINARY_DIR}/Doxyfile
+        WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
+    install(DIRECTORY ${CMAKE_BINARY_DIR}/doc/html 
+        DESTINATION share/doc/${CMAKE_PROJECT_NAME})
+endif()
